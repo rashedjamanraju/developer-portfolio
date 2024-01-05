@@ -1,4 +1,9 @@
 /* common shared style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -30,6 +35,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   margin: 0px 280px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .nav-title {
@@ -56,10 +63,15 @@ nav a {
 /* header related styles */
 .header {
   background-color: #fff8f3;
+  background-image: url("../images/header_bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
+/* problem:why jahnkar bhai used padding in .banner 
+=======================================================*/
 .banner {
-  /* padding: 30px 30px 30px 150px; */
+  /* padding: 30px 30px 0px 150px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -68,4 +80,62 @@ nav a {
 
 .banner figure {
   width: 700px;
+}
+
+.banner-greeting {
+  font-size: 45px;
+}
+
+.banner-title {
+  font-size: 85px;
+  font-weight: 700;
+  color: #474747;
+  margin-bottom: 20px;
+}
+
+/* problem:why jhanker bhai used max width in .banner-description 
+=======================================================*/
+.banner .banner-description {
+  margin-bottom: 30px;
+  max-width: 585px;
+}
+
+/* problem:why jhanker bhai used max width in .banner-content 
+=======================================================*/
+.banner-content {
+  max-width: 500px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 156px 186px;
+  background-color: #fff8f3;
+  margin: 135px 247px;
+}
+.section-title {
+  margin-bottom: 30px;
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+}
+.section-description {
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+.parent-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+.child-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  text-align: center;
 }
