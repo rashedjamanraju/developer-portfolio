@@ -2,6 +2,15 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
+figure {
+  margin: 0;
+  padding: 0;
+}
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 .text-primary {
   color: #fd6e0a;
 }
@@ -10,7 +19,7 @@ body {
   background: #fd6e0a;
   border: 0;
   font-size: 20px;
-  color:white;
+  color: white;
   font-weight: 700;
   padding: 15px 35px;
 }
@@ -20,6 +29,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0px 280px;
 }
 
 .nav-title {
@@ -41,4 +51,21 @@ nav li {
 nav a {
   text-decoration: none;
   color: #474747;
+}
+
+/* header related styles */
+.header {
+  background-color: #fff8f3;
+}
+
+.banner {
+  /* padding: 30px 30px 30px 150px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 280px;
+}
+
+.banner figure {
+  width: 700px;
 }
